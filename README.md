@@ -1,7 +1,5 @@
-# ecnu9505firstdemo
-east china normal university software engineering first demo
-
-
+# 师专！输！
+![](./pic/niganma.jpg)
 
 ## git语法
 

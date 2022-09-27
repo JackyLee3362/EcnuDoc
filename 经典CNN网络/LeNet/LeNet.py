@@ -1,9 +1,6 @@
 import torch
 import torch.nn as nn
 from d2l import torch as d2l
-import matplotlib
-matplotlib.use('TkAgg')
-from matplotlib import pyplot as plt
 
 net = nn.Sequential(nn.Conv2d(1, 6, kernel_size=5, padding=2), nn.Sigmoid(), nn.AvgPool2d(kernel_size=2, stride=2),
                     nn.Conv2d(6, 16, kernel_size=5), nn.Sigmoid(), nn.AvgPool2d(kernel_size=2, stride=2),

@@ -4,6 +4,8 @@
 
 ------
 
+https://cse442-17f.github.io/Conflict-Driven-Clause-Learning/
+
 We have a sudoku board!
 You may assume a solution exists, but how can we check?
 

@@ -23,9 +23,12 @@
 
 \institute{UC Berkeley}
 
-\date{\today}
+% \date{\today}
+\date{November, 14, 2022}
 
 \begin{document}
+
+
 
 % Title
 \begin{frame}
@@ -80,8 +83,19 @@
 \section{Background}
 
 \begin{frame}{What is generative model?}
-    Regardless of precise definition, the terminology is constitutional because a generative model can be used to "generate" random instances
+    \begin{columns}
+        \column{0.4\textwidth}
+        \par
+        Regardless of precise definition, \\ the terminology is constitutional because a generative model can be used to "generate" random instances.
+        \column{0.2\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=3.3cm]{../pic/ai1.png}
+            \caption{by Novel AI}
+        \end{figure}
+    \end{columns}
 \end{frame}
+
 \begin{frame}{Deep generative models}
     With the rise of deep learning, a new family of methods, called deep generative models (DGMs)
     \begin{itemize}
@@ -99,33 +113,19 @@
 \end{frame}
 
 \begin{frame}{Intuitive understanding}
-    % picture at here
-\end{frame}
-\section{Features}
-
-\begin{frame}{DDPM Features}
-    \begin{table}
-        \begin{tabular}{| c || c | c | c | c | c |  }
-            \hline
-            Name.      & Likelihood & Speed & Methods    & Stability & Others       \\
-            \hline \hline
-            GAN        & None       & fast  & One-step   & Unstable  & high quality \\
-            VAE        & Uncertain  & fast  & One-step   & Stable    & -            \\
-            Flow Model & Exactly    & fast  & Multi-step & Stable    & -            \\
-            DDPM       & Uncertain  & slow  & Multi-step & Stable    & beat GANs    \\
-            \hline
-        \end{tabular}
-        \caption{Comparision of generative model}
-    \end{table}
-\end{frame}
-
-\begin{frame}{Beat GANs}
-    \centering
+    % \begin{figure}
+    %     \centering
+    %     \includegraphics[width=3.3cm]{../pic/diffusion_static.png}
+    %     \caption{Microscopic view}
+    % \end{figure}pic\diffusion_static.png
     \begin{figure}
-        \includegraphics[height=4.5cm]{../pic/beat-GANs.png}
-        \caption{Some data about beat GANs}
+        \centering
+        \includegraphics[width=3.3cm]{../pic/diffusion_static.png}
+        \caption{Microscopic view}
     \end{figure}
 \end{frame}
+
+
 
 \section{Theory}
 \begin{frame}{The Process of DDPM}
@@ -177,6 +177,31 @@
     \end{block}
 \end{frame}
 
+\section{Features}
+
+\begin{frame}{DDPM Features}
+    \begin{table}
+        \begin{tabular}{| c || c | c | c | c | c |  }
+            \hline
+            Name.      & Likelihood & Speed & Methods    & Stability & Others       \\
+            \hline \hline
+            GANs       & None       & fast  & One-step   & Unstable  & high quality \\
+            VAEs       & Uncertain  & fast  & One-step   & Stable    & -            \\
+            Flow Model & Exactly    & fast  & Multi-step & Stable    & -            \\
+            DDPM       & Uncertain  & slow  & Multi-step & Stable    & beat GANs    \\
+            \hline
+        \end{tabular}
+        \caption{Comparision of generative model}
+    \end{table}
+\end{frame}
+
+\begin{frame}{Beat GANs}
+    \centering
+    \begin{figure}
+        \includegraphics[height=4.5cm]{../pic/beat-GANs.png}
+        \caption{Some data about beat GANs}
+    \end{figure}
+\end{frame}
 
 \begin{frame}
     \frametitle{Backward Equation}

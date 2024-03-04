@@ -1,6 +1,0 @@
-\beamer@sectionintoc {1}{Background}{3}{0}{1}
-\beamer@sectionintoc {2}{Introduction}{7}{0}{2}
-\beamer@sectionintoc {3}{Theory}{10}{0}{3}
-\beamer@sectionintoc {4}{Features}{14}{0}{4}
-\beamer@sectionintoc {5}{Application}{17}{0}{5}
-\beamer@sectionintoc {6}{Conclusion}{22}{0}{6}
